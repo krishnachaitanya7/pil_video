@@ -1,4 +1,5 @@
 from distutils.core import setup
+import setuptools  # noqa
 
 
 def parse_requirements(filename):
@@ -18,4 +19,5 @@ setup(
     packages=["pil_video"],
     install_requires=parse_requirements("requirements.txt"),
 )
+# print(parse_requirements("requirements.txt"))
 
