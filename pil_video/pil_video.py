@@ -30,4 +30,6 @@ def make_video(image_list: list, fps: int, delete_folder=True):
     os.system("vlc {}/test.mp4 vlc://quit".format(dirpath))
     if delete_folder:
         shutil.rmtree(dirpath)
+    else:
+        print("Find your images and video at {}".format(dirpath))
 
