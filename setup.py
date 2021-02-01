@@ -8,7 +8,6 @@ def parse_requirements(filename):
 
 
 # Tip: Generate requirements using pigar: pigar -p requirements.txt -P pil_video/
-reqs = [str(ir.req) for ir in parse_requirements("requirements.txt")]
 setup(
     name="pil_video",
     version="1.0",
@@ -17,6 +16,6 @@ setup(
     author_email="kodur.chaitanya@colorado.edu",
     url="https://www.python.org/sigs/distutils-sig/",
     packages=["pil_video"],
-    install_requires=reqs,
+    install_requires=parse_requirements("requirements.txt"),
 )
 
