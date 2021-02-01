@@ -10,7 +10,7 @@ def parse_requirements(filename):
 # Tip: Generate requirements using pigar: pigar -p requirements.txt -P pil_video/
 setup(
     name="pil_video",
-    version="1.0",
+    version="0.0.1",
     description="Play a PIL Image list as a video",
     author=" Kodur Krishna Chaitanya",
     author_email="kodur.chaitanya@colorado.edu",
