@@ -20,6 +20,11 @@ Also, you need to have VLC media player installed beforehand. You can do that by
 
 > sudo apt-get install vlc
 
+## Notes for myself
+when you do pip show PACKAGE_NAME, it will show you the exact location of your package from where it's importing
+But many times that might not be enough. So go to python console, and import the package and enter package_name.__file__, this will output exact path. Sometimes it might be an egg file, so you might wanna consider looking into that egg file. If it's just a directory then also it's good to go. When I was testing and I wanted to uninstall and 
+I wasn't sure where it was, this helped me. My package was in egg format, so I was unable to find the folder, because it was in an egg. Be careful.
+
 ## Usage
 ```python
 from pil_video import make_video

@@ -19,3 +19,5 @@ setup(
     packages=find_packages(exclude=("tests", "docs")),
 )
 
+# Some important notes to keep in mind,
+
