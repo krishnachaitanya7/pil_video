@@ -14,7 +14,7 @@ setup(
     description="Play a PIL Image list as a video",
     author=" Kodur Krishna Chaitanya",
     author_email="kodur.chaitanya@colorado.edu",
-    url="https://www.python.org/sigs/distutils-sig/",
+    url="https://github.com/krishnachaitanya7/pil_video",
     packages=["pil_video"],
     install_requires=parse_requirements("requirements.txt"),
 )
