@@ -10,10 +10,12 @@ python imports as much as possible so that this can be run out of virtual enviro
 
 ## Installation
 > pip install --upgrade git+https://github.com/krishnachaitanya7/pil_video.git
+
 or SSH Installation
+
 > pip install --upgrade git+ssh://git@github.com:krishnachaitanya7/pil_video.git
 
-Also, you need to have vlc media player installed beforehand.
+Also, you need to have VLC media player installed beforehand.
 
 ## Usage
 ```python
