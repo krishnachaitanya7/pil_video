@@ -1,5 +1,4 @@
-from distutils.core import setup
-import setuptools  # noqa
+from setuptools import setup, find_packages
 
 
 def parse_requirements(filename):
@@ -16,8 +15,7 @@ setup(
     author=" Kodur Krishna Chaitanya",
     author_email="kodur.chaitanya@colorado.edu",
     url="https://github.com/krishnachaitanya7/pil_video",
-    packages=["pil_video"],
     install_requires=parse_requirements("requirements.txt"),
+    packages=find_packages(exclude=("tests", "docs")),
 )
-# print(parse_requirements("requirements.txt"))
 
