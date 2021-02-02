@@ -14,17 +14,17 @@ import imageio
 
 def make_video(image_list: list, fps: int, delete_folder=True, play_video=True):
     """The main def for creating a temporary video out of the 
-    PIL Image list you passed
+    PIL Image list passed, according to the FPS passed
     Parameters
     ----------
     image_list : list
-        [description]
+        A list of PIL Images in sequential order you want the video to be generated
     fps : int
-        [description]
+        The FPS of the video
     delete_folder : bool, optional
-        [description], by default True
+        If set to False, this will not delete the temporary folder where images and video are saved, by default True
     play_video : bool, optional
-        [description], by default True
+        If set to false, the video generated will not be played, by default True
     """
     # Make an empty directort in temp, which we are gonna delete later
     dirpath = tempfile.mkdtemp()  # Example: '/tmp/tmpacxadh7t'
