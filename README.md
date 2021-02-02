@@ -1,5 +1,7 @@
 # pil_video
-![PyPi](https://github.com/krishnachaitanya7/pil_video/workflows/Upload%20Python%20Package/badge.svg)
+![PyPi](https://github.com/krishnachaitanya7/pil_video/workflows/PyPi/badge.svg)
+![PyPi](https://github.com/krishnachaitanya7/pil_video/workflows/Flake8%20Status/badge.svg)
+
 This is a python package. 
 
 The main use of this code is to play a numpy video. Something quick that can be used in day to day life as a 
@@ -19,6 +21,12 @@ When you have to loop through 2K images, it's usually not possible with Matplotl
 it can be a hassle. Matplotlib is good if you wanna loop through 50 images, but anything more than that can be an issue. But if you use this Python package, it will show you the video at a specific FPS you want and also give a temporary path if needed. That way there is no hassle of saving anything and once you visualize whatever you want it will be discarded or kept if the user wants to.
 
 ## Installation
+From 
+
+> pip install pil-video
+
+From Github: 
+
 > pip install --upgrade git+https://github.com/krishnachaitanya7/pil_video.git
 
 Also, you need to have VLC media player installed beforehand. You can do that by:
