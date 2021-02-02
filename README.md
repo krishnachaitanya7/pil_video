@@ -1,6 +1,6 @@
 # pil_video
 ![PyPi](https://github.com/krishnachaitanya7/pil_video/workflows/PyPi/badge.svg)
-![PyPi](https://github.com/krishnachaitanya7/pil_video/workflows/Flake8%20Status/badge.svg)
+![Flake8 Status](https://github.com/krishnachaitanya7/pil_video/workflows/Flake8%20Status/badge.svg)
 
 This is a python package. 
 
