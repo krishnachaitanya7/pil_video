@@ -1,4 +1,5 @@
 # pil_video
+![PyPi](https://github.com/krishnachaitanya7/pil_video/workflows/Upload%20Python%20Package/badge.svg)
 This is a python package. 
 
 The main use of this code is to play a numpy video. Something quick that can be used in day to day life as a 
