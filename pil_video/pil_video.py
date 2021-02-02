@@ -5,14 +5,27 @@ directory, and I will be deleteing everything after I play a video for you. Fina
 opencv imports, as it has lot of problems with Py2.7 and Py3.7 and many weird errors. So tried to use pure
 python imports as much as possible.
 """
+import os
 from PIL import Image  # noqa
 import tempfile
 import shutil
 import imageio
-import os
 
 
 def make_video(image_list: list, fps: int, delete_folder=True, play_video=True):
+    """The main def for creating a temporary video out of the 
+    PIL Image list you passed
+    Parameters
+    ----------
+    image_list : list
+        [description]
+    fps : int
+        [description]
+    delete_folder : bool, optional
+        [description], by default True
+    play_video : bool, optional
+        [description], by default True
+    """
     # Make an empty directort in temp, which we are gonna delete later
     dirpath = tempfile.mkdtemp()  # Example: '/tmp/tmpacxadh7t'
     video_filenames = []
