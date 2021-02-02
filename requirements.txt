@@ -5,3 +5,4 @@ Pillow>=8.0.1
 
 # pil_video/pil_video.py: 11
 imageio>=2.9.0
+imageio-ffmpeg>=0.4.3

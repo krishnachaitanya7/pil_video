@@ -12,7 +12,7 @@ import imageio
 import os
 
 
-def make_video(image_list: list, fps: int, delete_folder=True):
+def make_video(image_list: list, fps: int, delete_folder=True, play_video=True):
     # Make an empty directort in temp, which we are gonna delete later
     dirpath = tempfile.mkdtemp()  # Example: '/tmp/tmpacxadh7t'
     video_filenames = []
@@ -27,9 +27,9 @@ def make_video(image_list: list, fps: int, delete_folder=True):
     for each_image in video_filenames:
         writer.append_data(imageio.imread(each_image))
     writer.close()
-    os.system("vlc {}/test.mp4 vlc://quit".format(dirpath))
+    if play_video:
+        os.system("vlc {}/test.mp4 vlc://quit".format(dirpath))
     if delete_folder:
         shutil.rmtree(dirpath)
     else:
         print("Find your images and video at {}".format(dirpath))
-

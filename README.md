@@ -13,6 +13,10 @@ python imports as much as possible so that this can be run out of virtual enviro
 
 Finally, please don't forget to install VLC media player for this to work.
 
+## Advantages of using this in place of Matplotlib
+When you have to loop through 2K images, it's usually not possible with Matplotlib. It's usually slow. At that time usually you have to save the images and then make a video out of it. Problem is if you want to do it multiple times,
+it can be a hassle. Matplotlib is good if you wanna loop through 50 images, but anything more than that can be an issue. But if you use this Python package, it will show you the video at a specific FPS you want and also give a temporary path if needed. That way there is no hassle of saving anything and once you visualize whatever you want it will be discarded or kept if the user wants to.
+
 ## Installation
 > pip install --upgrade git+https://github.com/krishnachaitanya7/pil_video.git
 
@@ -41,4 +45,6 @@ make_video(test, fps=20)
 # there is a third optional argument delete_folder, which is default True, but if you wanna have the video as well as 
 # images for your reference, you can pass this as false, so that it's not deleted automatically
 make_video(test, fps=20, delete_folder=False)
+# There is fourth optional argument play_video which is True by default. If that's passed as False, then the video will not be played. Used in scenarios where you are working in a remote terminal and you don't X forwarding to your PC
+make_video(test, fps=20, delete_folder=False, play_video=False)
 ```
